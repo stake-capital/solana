@@ -13,11 +13,19 @@ https://docs.solana.com/tour-de-sol/participation/steps-to-create-a-validator/in
 
 # Configuration
 
-Keys are saved in: 
+## Keys are saved in: 
 
 ```
 solana-keygen new -o ~/validator-keypair.json`
 Wrote new keypair to /home/ubuntu/validator-keypair.json
 =====================================================================
 Save this mnemonic phrase to recover your new keypair:
+```
+## Wallet config
+
+```
+ubuntu@ip-10-0-0-42:~$ solana get
+Wallet Config: /home/ubuntu/.config/solana/cli/config.yml
+* url: http://tds.solana.com:8899
+* keypair: /home/ubuntu/validator-keypair.json
 ```
