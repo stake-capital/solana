@@ -32,15 +32,15 @@ Wallet Config: /home/ubuntu/.config/solana/cli/config.yml
 
 ## How keys where generated
 
-$ solana-keygen new --no-passphrase --silent --outfile validator-keypair.json 
+`$ solana-keygen new --no-passphrase --silent --outfile validator-keypair.json` 
 Wrote new keypair to validator-keypair.json
 
-$ solana-keygen new --no-passphrase --silent --outfile validator-vote-keypair.json 
+`$ solana-keygen new --no-passphrase --silent --outfile validator-vote-keypair.json` 
 Wrote new keypair to validator-vote-keypair.json
 
 $ solana-keygen pubkey validator-keypair.json 
 7CedTutHVnWHcRF6dbYoTgMHzzrtNnayTpqvWGiviALe
 
-$ solana-keygen pubkey validator-vote-keypair.json 
+`$ solana-keygen pubkey validator-vote-keypair.json`
 6j66Xo3ERzcspy6KZvruK67pryV582BddNRdtfDACUp4
 
