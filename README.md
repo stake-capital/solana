@@ -11,7 +11,12 @@ Docs: https://docs.solana.com/book/
 
 https://docs.solana.com/tour-de-sol/participation/steps-to-create-a-validator/install-the-solana-software
 
+
 # Configuration
+
+## Solana SLP1 FAQ
+
+https://docs.google.com/document/d/1nIkAuLhJfrxVmdskKxoy1M3NrThwnXB35dadWHVfXxk/edit
 
 ## Keys are saved in: 
 
