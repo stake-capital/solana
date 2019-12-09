@@ -18,6 +18,9 @@ https://docs.solana.com/tour-de-sol/participation/steps-to-create-a-validator/in
 
 https://docs.google.com/document/d/1nIkAuLhJfrxVmdskKxoy1M3NrThwnXB35dadWHVfXxk/edit
 
+
+Genesis: https://github.com/solana-labs/solana/blob/v0.21/genesis/src/genesis_accounts.rs#L506-L563
+
 ## Keys are saved in: 
 
 ```
