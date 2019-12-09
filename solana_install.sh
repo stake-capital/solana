@@ -1,5 +1,5 @@
 # Install binary
-ubuntu@ip-10-0-0-42:~$ curl -sSf https://raw.githubusercontent.com/solana-labs/solana/v0.19.1/install/solana-install-init.sh | sh -s - 0.20.0
+`curl -sSf https://raw.githubusercontent.com/solana-labs/solana/v0.21.2/install/solana-install-init.sh | sh -s - 0.21.2`
 
 #looking for latest release
 #downloading v0.20.0 installer
