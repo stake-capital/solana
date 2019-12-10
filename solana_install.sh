@@ -13,3 +13,31 @@
 
 # Export 
 export PATH="/home/ubuntu/.local/share/solana/install/active_release/bin:$PATH"
+
+# Add sysntemd
+echo "[Unit]
+Description=Solana Validator
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ubuntu
+LimitNOFILE=65536
+Environment=ENTRYPOINT=34.83.130.52
+Environment=A5rdZnMcZLZRPsvmPf55uKM8AtCs57r7ZV64HKAk78re
+ExecStart=/home/ubuntu/.local/share/solana/install/active_release/bin/solana-validator   --dynamic-port-range 8001-8010   --entrypoint 34.83.130.52:8001   --gossip-port 8001   --identity-keypair /home/ubuntu/validator-keypair.json   --ledger /home/ubuntu/validator-ledger   --limit-ledger-size   --log -   --voting-keypair /home/ubuntu/validator-vote-keypair.json   --expected-genesis-hash A5rdZnMcZLZRPsvmPf55uKM8AtCs57r7ZV64HKAk78re
+[Install]
+WantedBy=multi-user.target" > solana.service
+
+sudo mv solana.service /etc/systemd/system/
+sudo systemctl enable solana.service
+
+sudo systemctl enable solana.service
+sudo systemctl start solana
+sudo journalctl -u solana -f
+
+
+
